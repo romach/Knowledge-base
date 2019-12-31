@@ -39,3 +39,13 @@ Use [`JSON.strignify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 **How to parse object from string?**
 
 Use [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method: `JSON.parse('{"key":value}')`
+
+**What is hoisting?**
+
+This is process of putting variable and function declaration to the mamory during the compile phase.
+
+**What is the hoisting order?**
+
+1. `var`, `let`, `const`. Only `var` is initialized by `undefined` during hoisting. `let` initialized by `undefined` after declaration;
+2. function parameters;
+3. function declarations. Will conflict with variable declarations with the same name;
