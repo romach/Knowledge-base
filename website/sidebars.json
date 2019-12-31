@@ -2,6 +2,7 @@
   "docs": {
     "Main": ["index"],
     "HTML": ["html/overview"],
+    "JavaScript": ["javascript/overview"],
     "Ansible": [
       "ansible/overview",
       "ansible/installation",
