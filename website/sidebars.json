@@ -1,6 +1,7 @@
 {
   "docs": {
     "Main": ["index"],
+    "HTML": ["html/overview"],
     "Ansible": [
       "ansible/overview",
       "ansible/installation",
