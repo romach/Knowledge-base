@@ -1,0 +1,164 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+const React = require("react")
+
+const CompLibrary = require("../../core/CompLibrary.js")
+const MetadataBlog = require("../../core/MetadataBlog.js")
+const BlogPost = require("../../core/BlogPost.js")
+const utils = require("../../core/utils.js")
+
+const Container = CompLibrary.Container
+const GridBlock = CompLibrary.GridBlock
+
+const Button = props => (
+  <div className="pluginWrapper buttonWrapper">
+    <a className="button" href={props.href} target={props.target}>
+      {props.children}
+    </a>
+  </div>
+)
+
+class HomeSplash extends React.Component {
+  render() {
+    const { siteConfig, language = "" } = this.props
+    const { baseUrl, docsUrl } = siteConfig
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`
+    const langPart = `${language ? `${language}/` : ""}`
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`
+
+    const SplashContainer = props => (
+      <div className="homeContainer">
+        <div className="homeSplashFade">
+          <div className="wrapper homeWrapper">{props.children}</div>
+        </div>
+      </div>
+    )
+
+    const Logo = props => (
+      <div className="projectLogo">
+        <img src={props.img_src} alt="Project Logo" />
+      </div>
+    )
+
+    const ProjectTitle = () => (
+      <h2 className="projectTitle">
+        {siteConfig.title}
+        <small>{siteConfig.tagline}</small>
+      </h2>
+    )
+
+    const PromoSection = props => (
+      <div className="section promoSection">
+        <div className="promoRow">
+          <div className="pluginRowBlock">{props.children}</div>
+        </div>
+      </div>
+    )
+
+    const Button = props => (
+      <div className="pluginWrapper buttonWrapper">
+        <a className="button" href={props.href} target={props.target}>
+          {props.children}
+        </a>
+      </div>
+    )
+
+    return (
+      <SplashContainer>
+        <Logo img_src={`${baseUrl}img/undraw_monitor.svg`} />
+        <div className="inner">
+          <ProjectTitle siteConfig={siteConfig} />
+          <PromoSection>
+            <Button href={docUrl('index.html')}>Knowledge base</Button>
+            <Button href={`${baseUrl}blog`}>Blog</Button>
+          </PromoSection>
+        </div>
+      </SplashContainer>
+    )
+  }
+}
+
+class Index extends React.Component {
+  render() {
+    const { config: siteConfig, language = "" } = this.props
+    const { baseUrl, docsUrl } = siteConfig
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`
+    const langPart = `${language ? `${language}/` : ""}`
+    //todo: fix docUrl duplication
+    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`
+
+    const Block = props => (
+      <Container
+        padding={["bottom", "top"]}
+        id={props.id}
+        background={props.background}
+      >
+        <GridBlock
+          align="center"
+          contents={props.children}
+          layout={props.layout}
+        />
+      </Container>
+    )
+
+    const Topics = () => (
+      <Block layout="fourColumn" background="light">
+        {[
+          {
+            content: `<strong><a href="${docUrl(
+              "ansible/overview"
+            )}">Ansible</a></strong> - open source automation platform`,
+            image: `${baseUrl}img/ansible_logo.svg`,
+            imageAlign: "top",
+            title: "Ansible",
+          },
+          {
+            content: `<strong><a href="${docUrl(
+              "vagrant/overview"
+            )}">Vagrant</a></strong> - virtual machine manager`,
+            image: `${baseUrl}img/vagrant_logo.svg`,
+            imageAlign: "top",
+            title: "Vagrant",
+          },
+        ]}
+      </Block>
+    )
+
+    const LastBlogPosts = () => (
+      <Container className="mainContainer postContainer blogContainer">
+        <h1>Latest news</h1>
+        <div className="posts">
+          {MetadataBlog.slice(0, 5).map(post => (
+            <BlogPost
+              post={post}
+              content={post.content}
+              truncate
+              key={
+                utils.getPath(post.path, this.props.config.cleanUrl) +
+                post.title
+              }
+              config={this.props.config}
+            />
+          ))}
+        </div>
+        <Button href={`${baseUrl}blog`}>Blog</Button>
+      </Container>
+    )
+
+    return (
+      <div>
+        <HomeSplash siteConfig={siteConfig} language={language} />
+        <div className="mainContainer">
+          <Topics />
+          <LastBlogPosts />
+        </div>
+      </div>
+    )
+  }
+}
+
+module.exports = Index

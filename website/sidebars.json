@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Main": ["index"],
+    "Ansible": [
+      "ansible/overview",
+      "ansible/installation",
+      "ansible/run-commands"
+    ],
+    "Vagrant": ["vagrant/overview", "vagrant/installation"]
+  }
+}
