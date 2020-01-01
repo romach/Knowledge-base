@@ -14,3 +14,8 @@ Add attribute `tabindex="-1"`. See also: [`tabindex`](https://developer.mozilla.
 - `<main>` - is used for main content of the page; should be used once per page;
 - `<nav>` - contains navigation links;
 - `<footer>` - is used for page or article footer;
+
+**What element can you use to show progress bar?**
+
+- `<meter>`;
+- `<progress>`;
