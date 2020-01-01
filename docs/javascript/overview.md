@@ -66,6 +66,7 @@ Array.prototype.push.apply(array1, array2);
 ```
 
 **How to shuffle array?**
+
 We can combine `Math.random()` with `Array.prototype.sort()`
 
 ```
