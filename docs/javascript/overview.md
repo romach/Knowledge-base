@@ -58,3 +58,9 @@ This is process of putting variable and function declaration to the mamory durin
 - [`for...of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) - use for iteration over iterable objects
 - [`for...in` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) - iterates over all enumerable properties, **not recommended**
 - [`Array.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) - iterate over arrays
+
+**How to merge two arrays?** 
+
+```
+Array.prototype.push.apply(array1, array2);
+```
