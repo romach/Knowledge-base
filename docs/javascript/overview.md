@@ -59,8 +59,15 @@ This is process of putting variable and function declaration to the mamory durin
 - [`for...in` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) - iterates over all enumerable properties, **not recommended**
 - [`Array.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) - iterate over arrays
 
-**How to merge two arrays?** 
+**How to merge two arrays?**
 
 ```
 Array.prototype.push.apply(array1, array2);
+```
+
+**How to shuffle array?**
+We can combine `Math.random()` with `Array.prototype.sort()`
+
+```
+[1, 2, 3].sort((first, second) => Math.random() - 0.5)
 ```
