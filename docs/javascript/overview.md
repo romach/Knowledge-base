@@ -20,7 +20,7 @@ Use [`JSON.strignify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 - use `replacer` callback as second argument:
 
-  ```
+  ```javascript
   JSON.stringify(obj, (key, value) => {...})
   ```
 
@@ -28,8 +28,8 @@ Use [`JSON.strignify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 - use `replacer` array:
 
-  ```
-  JSON.stringify(obj, ['one', 'two'])
+  ```javascript
+  JSON.stringify(obj, ["one", "two"]);
   ```
 
   If object has property from array, this property will be added to result string.
@@ -61,7 +61,7 @@ This is process of putting variable and function declaration to the mamory durin
 
 **How to merge two arrays?**
 
-```
+```javascript
 Array.prototype.push.apply(array1, array2);
 ```
 
@@ -69,6 +69,58 @@ Array.prototype.push.apply(array1, array2);
 
 We can combine `Math.random()` with `Array.prototype.sort()`
 
+```javascript
+[1, 2, 3].sort((first, second) => Math.random() - 0.5);
 ```
-[1, 2, 3].sort((first, second) => Math.random() - 0.5)
+
+**How can you declare functions?**
+
+You can use:
+
+- function declaration: `function f1(){}`
+- function expression: `let f2 = function(){}`
+- arrow function expression: `let f3 = () => {}`
+
+**How can you create objects?**
+
+You can use _object literal_: `let obj = {}`
+
+**How can you create array?**
+
+You can use _array literal_: `let arr = [1, 2]`
+
+**How can you use CommonJS modules?**
+
+Export:
+
+```javascript
+function f() {
+  console.log("Hello");
+}
+module.exports = f;
+```
+
+Import:
+
+```javascript
+const f = require("./f.js");
+```
+
+**How can you use EcmaScript modules?**
+
+Export:
+
+```javascript
+function f(){ console.log('Hello') }
+export default f; // default export
+// or
+export f;
+```
+
+Import:
+
+```javascript
+import f from "./f.mjs"; // import default function
+import * as f from "./f.mjs"; // import whole module as namespace object
+import { f } from "./f.mjs"; // import a single export
 ```
