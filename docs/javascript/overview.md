@@ -124,3 +124,35 @@ import f from "./f.mjs"; // import default function
 import * as f from "./f.mjs"; // import whole module as namespace object
 import { f } from "./f.mjs"; // import a single export
 ```
+
+**How to check that expression throws exception?**
+
+```javascript
+assert.throws(() => {
+  null.prop;
+});
+```
+
+```javascript
+assert.throws(() => {
+  null.prop;
+}, TypeError);
+```
+
+```javascript
+assert.throws(() => {
+  null.prop;
+}, /^TypeError: Cannot read property 'prop' of null$/);
+```
+
+```javascript
+assert.throws(
+  () => {
+    null.prop;
+  },
+  {
+    name: "TypeError",
+    message: `Cannot read property 'prop' of null`
+  }
+);
+```
