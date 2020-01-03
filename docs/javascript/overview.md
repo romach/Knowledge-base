@@ -168,7 +168,7 @@ assert.throws(
 - _global declarative variables_ - is created with `let` and `const` in global scope;
 - _global object variables_ - is created with `var` and function declarations in global scope. Create properties of global object;
 
-**How to access to global object?**
+**How to access the global object?**
 
 - use `globalThis` - **universal mathod**
 - use `this` in top-level scope
