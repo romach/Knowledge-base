@@ -156,3 +156,22 @@ assert.throws(
   }
 );
 ```
+
+**Which variable scopes do you know?**
+
+- _direct_ - scope where variable was declared;
+- _inner_ - scope that is nested to the direct scope;
+- _outer_ - parent scope for _direct_;
+
+**What kinds of global variables do you know?**
+
+- _global declarative variables_ - is created with `let` and `const` in global scope;
+- _global object variables_ - is created with `var` and function declarations in global scope. Create properties of global object;
+
+**How to access to global object?**
+
+- use `globalThis` - **universal mathod**
+- use `this` in top-level scope
+- use `global` in NodeJS
+- use `window` in browsers
+- use `self` in browsers and Web Workers
