@@ -175,3 +175,49 @@ assert.throws(
 - use `global` in NodeJS
 - use `window` in browsers
 - use `self` in browsers and Web Workers
+
+**What is Temporal Dead Zone?**
+
+- it is time between entering the scope of a variable and executing its declaration;
+- is applicable for `let`, `const` and `class`
+
+**What is early activation?**
+
+- it is ability of variables (`var`) and functions to be accessed before declaration;
+- `var`-s have partial early activation. They are `undefined` before activation;
+
+**What is shadowed variable?**
+
+- this is variable in nested block with same name as in outer block;
+
+  ```javascript
+  let a = 1;
+  {
+    let a = 2;
+  }
+  ```
+
+**What is different between primitive variables and objects?**
+
+|           | Primitive | Object  |
+| --------- | --------- | ------- |
+| Immutable | Yes       | No      |
+| Passed    | By value  | By link |
+| Compared  | By value  | By link |
+
+**How many type JavaScript has got?**
+
+- JavaScript has 7 types: 6 primitive and `object`
+
+**Why `typeof null` is `"object"`?**
+
+- it is a bug;
+- `null` is represented as NULL pointer (so it is an object link), but implementation of `typeof` doesn't have check for null pointer, only for object; [details](https://2ality.com/2013/10/typeof-null.html)
+
+**Why `typeof NaN` is `"number"`?**
+
+- because `NaN` is a numeric data type whose value cannot be represented using actual numbers;
+
+**Why `typeof function` is `"function"`?**
+
+- despite the fact that `function` has `"object"` type, `typeof` returns `"function"` . This is logic of `typeof` operator
