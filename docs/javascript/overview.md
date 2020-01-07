@@ -253,3 +253,18 @@ assert.throws(
 - use lose equality operator: `==`;
 - use strict equality operator: `===`;
 - use `Object.is(arg,arg)`
+
+**How to check, if a function exists?**
+
+```javascript
+if (typeof func === "function") {
+  func();
+}
+```
+
+**How to check an error type?**
+
+```javascript
+e.constructor === SyntaxError;
+e.constructor.name === "name";
+```
