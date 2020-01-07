@@ -221,3 +221,35 @@ assert.throws(
 **Why `typeof function` is `"function"`?**
 
 - despite the fact that `function` has `"object"` type, `typeof` returns `"function"` . This is logic of `typeof` operator
+
+**How should I use `instanceof` operator?**
+
+- it is used with objects;
+
+- it returns `true`, if variable was created with specified class (inheritance rules work too)
+
+  ```javascript
+  [] instanceof Array === true;
+  [] instanceof Object === true;
+  ```
+
+**Why do we need wrapper classes?**
+
+- to convert variables to specific primitive type with constructor function;
+- wrapper classes provide properties for primitive types;
+- wrapper classes are namespaces for utility functions;
+- to create objects from primitive values;
+
+**How to check numeric input?**
+
+- `if (Number(x) === 1){}`
+
+**How to test for null or undefined?**
+
+- `if (!x){}`
+
+**How can you compare variables?**
+
+- use lose equality operator: `==`;
+- use strict equality operator: `===`;
+- use `Object.is(arg,arg)`
