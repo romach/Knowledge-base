@@ -2,7 +2,17 @@
   "docs": {
     "Main": ["index"],
     "HTML": ["html/overview"],
-    "JavaScript": ["javascript/overview"],
+    "JavaScript": [
+      "javascript/basics",
+      "javascript/data-types",
+      "javascript/types-coercion",
+      "javascript/objects",
+      "javascript/scopes",
+      "javascript/arrays",
+      "javascript/functions",
+      "javascript/modules",
+      "javascript/testing"
+    ],
     "Ansible": [
       "ansible/overview",
       "ansible/installation",

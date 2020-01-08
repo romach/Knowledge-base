@@ -9,6 +9,16 @@ This is main page of Knowledge base.
 At this time there are pages:
 - **HTML**
     - [Overview](html/overview.md)
+- **JavaScript**
+    - [Basics](javascript/basics)
+    - [Data types](javascript/data-types)
+    - [Types coercion](javascript/types-coercion)
+    - [Objects](javascript/objects)
+    - [Scopes](javascript/scopes)
+    - [Arrays](javascript/arrays)
+    - [Functions](javascript/functions)
+    - [Modules](javascript/modules)
+    - [Testing](javascript/testing)
 - **Ansible**
     - [Overview](ansible/overview.md)
     - [Installation](ansible/installation.md)
