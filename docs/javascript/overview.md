@@ -295,3 +295,19 @@ e.constructor.name === "name";
 [NaN].findIndex(x => Number.isNaN(x));
 [NaN].find(x => Number.isNaN(x));
 ```
+
+**How to check that value is integer?**
+
+Use `Number.isInteger(num: number): boolean`
+
+**How to parse float?**
+
+- `Number.parseFloat(str: string): number` - **bad** - ignores leading whitespace and illegal trailing characters and can hide problems;
+- `Number()` - **good** - ignores leading and trailing whitespace
+
+**How to parse integer?**
+
+- `Number.parseInt(str: string, radix=10): number` - **bad**
+  - coercing to string is inefficient
+  - stopping before the first non-digit
+- `Math.trunc(num: number): number` - **good**
