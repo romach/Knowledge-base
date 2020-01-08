@@ -8,6 +8,10 @@ sidebar_label: Overview
 
 Use [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator: `delete obj.prop;`
 
+**How to check that object has property?**
+
+Use `in` operator: `'prop' in obj`
+
 **How to check if object has not inherited property?**
 
 Use [`hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) method: `obj.hasOwnProperty('prop')`
@@ -246,7 +250,8 @@ assert.throws(
 
 **How to test for null or undefined?**
 
-- `if (!x){}`
+- `if (!x){}` - be aware of pitfall because of falsy values;
+- `if (x === undefined)`
 
 **How can you compare variables?**
 
@@ -267,4 +272,26 @@ if (typeof func === "function") {
 ```javascript
 e.constructor === SyntaxError;
 e.constructor.name === "name";
+```
+
+**Where can you meet `undefined` in JavaScript?**
+
+- value of not initialized variable;
+- value of not passed function's parameter;
+- missing object property;
+- result of the function without `return` statement;
+
+**What falsy values do you know?**
+
+- `null`, `undefined`
+- `0`, `NaN`
+- `false`
+- `''`
+
+**How can you find `NaN` in array?**
+
+```javascript
+[NaN].includes(NaN);
+[NaN].findIndex(x => Number.isNaN(x));
+[NaN].find(x => Number.isNaN(x));
 ```
