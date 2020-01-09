@@ -28,3 +28,7 @@ sidebar_label: Data types
 **Why `typeof function` is `"function"`?**
 
 - despite the fact that `function` has `"object"` type, `typeof` returns `"function"` . This is logic of `typeof` operator
+
+**What is `typeof undefined`?**
+
+`"undefined"`
