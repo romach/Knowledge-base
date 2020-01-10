@@ -4,6 +4,10 @@ title: Objects
 sidebar_label: Objects
 ---
 
+**How can you create objects?**
+
+- with _object literal_: `let obj = {}`
+
 **How to delete property from object?**
 
 Use [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator: `delete obj.prop;`
@@ -43,10 +47,6 @@ Use [`JSON.strignify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 **How to parse object from string?**
 
 Use [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) method: `JSON.parse('{"key":value}')`
-
-**How can you create objects?**
-
-You can use _object literal_: `let obj = {}`
 
 **How should I use `instanceof` operator?**
 

@@ -72,3 +72,28 @@ string.indexOf("a");
 
 - string interpolation
 - multi-line
+
+**How can you use raw string literals?**
+
+```javascript
+String.raw`^\.`
+```
+
+**How to create multiple lines template literal with proper indentation?**
+
+```javascript
+import dedent from 'dedent';
+dedent`
+  <div>
+    ${text}
+  </div>`
+```
+
+```javascript
+	`
+<div>
+	${text}
+</div>
+	`.trim()
+```
+
