@@ -12,6 +12,7 @@ At this time there are pages:
 - **JavaScript**
     - [Basics](javascript/basics)
     - [Data types](javascript/data-types)
+    - [Strings](javascript/strings)
     - [Types coercion](javascript/types-coercion)
     - [Objects](javascript/objects)
     - [Scopes](javascript/scopes)

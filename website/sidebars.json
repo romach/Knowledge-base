@@ -5,6 +5,7 @@
     "JavaScript": [
       "javascript/basics",
       "javascript/data-types",
+      "javascript/strings",
       "javascript/types-coercion",
       "javascript/objects",
       "javascript/scopes",
