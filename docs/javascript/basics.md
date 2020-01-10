@@ -20,7 +20,7 @@ sidebar_label: Basics
 
 **How to access the global object?**
 
-- use `globalThis` - **universal mathod**
+- use `globalThis` - **universal method**
 - use `this` in top-level scope
 - use `global` in NodeJS
 - use `window` in browsers
