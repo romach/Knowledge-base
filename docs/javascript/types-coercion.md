@@ -28,3 +28,7 @@ Use `Number.isInteger(num: number): boolean`
   - coercing to string is inefficient
   - stopping before the first non-digit
 - `Math.trunc(num: number): number` - **good**
+
+**How are types are compared with each other?**
+
+See [table](https://dorey.github.io/JavaScript-Equality-Table/) for reference
