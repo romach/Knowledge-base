@@ -32,3 +32,8 @@ Use `Number.isInteger(num: number): boolean`
 **How are types are compared with each other?**
 
 See [table](https://dorey.github.io/JavaScript-Equality-Table/) for reference
+
+**What are coercions rules between types?**
+
+- see [table](https://getify.github.io/coercions-grid/)
+- read [article](https://davidwalsh.name/fixing-coercion)

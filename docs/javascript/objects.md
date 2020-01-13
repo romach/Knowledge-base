@@ -7,6 +7,7 @@ sidebar_label: Objects
 **How can you create objects?**
 
 - with _object literal_: `let obj = {}`
+- `Object.create(prototype)`
 
 **How to delete property from object?**
 

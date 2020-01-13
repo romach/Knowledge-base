@@ -12,10 +12,12 @@ At this time there are pages:
 - **JavaScript**
     - [Basics](javascript/basics)
     - [Data types](javascript/data-types)
+    - [Variables](javascript/variables)
     - [Strings](javascript/strings)
     - [Types coercion](javascript/types-coercion)
     - [Objects](javascript/objects)
     - [Scopes](javascript/scopes)
+    - [Closures](javascript/closures)
     - [Arrays](javascript/arrays)
     - [Functions](javascript/functions)
     - [Modules](javascript/modules)

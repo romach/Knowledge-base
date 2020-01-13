@@ -5,10 +5,12 @@
     "JavaScript": [
       "javascript/basics",
       "javascript/data-types",
+      "javascript/variables",
       "javascript/strings",
       "javascript/types-coercion",
       "javascript/objects",
       "javascript/scopes",
+      "javascript/closures",
       "javascript/arrays",
       "javascript/functions",
       "javascript/modules",

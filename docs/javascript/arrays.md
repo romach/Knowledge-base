@@ -29,3 +29,10 @@ You can use _array literal_: `let arr = [1, 2]`
 [NaN].findIndex(x => Number.isNaN(x));
 [NaN].find(x => Number.isNaN(x));
 ```
+
+**How can you clone array?**
+
+```javascript
+let clone = arr1.concat();
+```
+
