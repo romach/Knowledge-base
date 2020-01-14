@@ -13,6 +13,7 @@ At this time there are pages:
     - [Basics](javascript/basics)
     - [Data types](javascript/data-types)
     - [Variables](javascript/variables)
+    - [Numbers](javascript/numbers)
     - [Strings](javascript/strings)
     - [Types coercion](javascript/types-coercion)
     - [Objects](javascript/objects)
@@ -22,6 +23,7 @@ At this time there are pages:
     - [Functions](javascript/functions)
     - [Modules](javascript/modules)
     - [Testing](javascript/testing)
+    - [Exception handling](javascript/exception-handling)
 - **Ansible**
     - [Overview](ansible/overview.md)
     - [Installation](ansible/installation.md)

@@ -6,6 +6,7 @@
       "javascript/basics",
       "javascript/data-types",
       "javascript/variables",
+      "javascript/numbers",
       "javascript/strings",
       "javascript/types-coercion",
       "javascript/objects",
@@ -14,7 +15,8 @@
       "javascript/arrays",
       "javascript/functions",
       "javascript/modules",
-      "javascript/testing"
+      "javascript/testing",
+      "javascript/exception-handling"
     ],
     "Ansible": [
       "ansible/overview",

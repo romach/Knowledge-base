@@ -10,6 +10,6 @@ sidebar_label: Variables
 | ----------- | -------------------------------- | ------------------------------------------------ |
 | Scope       | function                         | block                                            |
 | Hoisting    | `undefined` before declaration   | has Temporal Dead Zone before declaration        |
-| For-in loop | updates after each iteration     | new binding (copy) is created for each iteration |
+| For loop    | updates after each iteration     | new binding (copy) is created for each iteration |
 | Declaration | can be redeclared with same name | can't be redeclared                              |
 

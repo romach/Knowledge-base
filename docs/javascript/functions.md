@@ -4,12 +4,29 @@ title: Functions
 sidebar_label: Functions
 ---
 
-**How can you declare functions?**
+**What types of functions do you know?**
 
-You can use:
+- ordinary function;
+- arrow function;
+- method;
+- class;
+
+**What roles can functions have?**
+
+|                   | Real function | Method | Constructor |
+| ----------------- | ------------- | ------ | ----------- |
+| Ordinary function | +             | +      | +           |
+| Arrow function    | +             |        |             |
+| Method            |               | +      |             |
+| Class             |               |        | +           |
+
+**How can you declare *ordinary* functions?**
+
+Ordinary function:
 
 - function declaration: `function f1(){}`
-- function expression: `let f2 = function(){}`
+- anonymous function expression: `let f2 = function(){}`
+- named function expression: `let f3 = function name(){}` - `name` is only accessible inside function
 - arrow function expression: `let f3 = () => {}`
 
 **What is context?**
