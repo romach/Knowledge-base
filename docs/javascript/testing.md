@@ -42,10 +42,3 @@ assert.throws(
 e.constructor === SyntaxError;
 e.constructor.name === "name";
 ```
-
-**What falsy values do you know?**
-
-- `null`, `undefined`
-- `0`, `NaN`
-- `false`
-- `''`

@@ -9,8 +9,8 @@ sidebar_label: Basics
 - [`for` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
 - [`while` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/while)
 - [`do-while` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/do...while)
-- [`for...of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) - use for iteration over *iterable* objects
-- [`for-await-of` statement](<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of>)
+- [`for...of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) - use for iteration over _iterable_ objects
+- [`for-await-of` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for-await...of)
 - [`for...in` statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) - iterates over all enumerable properties, **not recommended**
 - [`Array.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) - iterate over arrays
 
@@ -51,7 +51,7 @@ if (typeof func === "function") {
 **How to create Symbol?**
 
 ```javascript
-const symbol = Symbol('symbol');
+const symbol = Symbol("symbol");
 ```
 
 **What are usecases for Symbols?**
@@ -65,3 +65,10 @@ const symbol = Symbol('symbol');
 - `Symbol.hasInstance`: key for method that allows object to be used at the right-side of `instanceof`
 - `Symbol.toStringTag`: key for method that ca be used instead of `toString()`
 - `Symbol.toPrimitive(hint)`: to convert object to primitive value;
+
+**What falsy values do you know?**
+
+- `null`, `undefined`
+- `0`, `NaN`
+- `false`
+- `''`

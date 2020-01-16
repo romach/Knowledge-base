@@ -53,6 +53,62 @@ let arrow = () => {};
 class Class {}
 ```
 
+**What is _callback_?**
+
+- function that is argument of a function or method call
+
+**How to define parameter _default value_?**
+
+```javascript
+function f(a=0){}
+```
+
+**What is _rest parameter_?**
+
+- parameter that collects multiple parameters into array
+
+```javascript
+function f(a, ...b){}
+```
+
+**How can you simulate named parameters?**
+
+We can pass object to method call and destructure it with default parameters
+
+```javascript
+func({a:1, b:2})
+function func({a=0, b=0}={})
+```
+
+**What is _spread argument_?**
+
+- operator that converts single iterable argument to multible arguments
+- is used in method call
+- is opposite to *rest parameter*
+
+```javascript
+function spread(a, b) {
+  console.log(a, b);
+}
+spread(..."ab");
+```
+
+**How to evaluate JS code?**
+
+Is better to evaluate code in global context
+
+```javascript
+eval.call(undefined, 'code')
+```
+
+**Note:** `Function` creates function in non-strict mode.
+
+```javascript
+(new Function('a', 'b', 'return a + b'))(1, 2);
+```
+
+## Context
+
 **What is context?**
 
 - it is the object what is bound to `this` variable inside function body;
@@ -76,3 +132,4 @@ class Class {}
 **How does context work in arrow function?**
 
 - arrow functions get context from outer scope with closure (the logic is the same as for variables)
+- `arguments` is absent in arrow function
