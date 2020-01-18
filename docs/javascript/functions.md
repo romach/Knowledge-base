@@ -60,7 +60,7 @@ class Class {}
 **How to define parameter _default value_?**
 
 ```javascript
-function f(a=0){}
+function f(a = 0) {}
 ```
 
 **What is _rest parameter_?**
@@ -68,7 +68,7 @@ function f(a=0){}
 - parameter that collects multiple parameters into array
 
 ```javascript
-function f(a, ...b){}
+function f(a, ...b) {}
 ```
 
 **How can you simulate named parameters?**
@@ -84,7 +84,7 @@ function func({a=0, b=0}={})
 
 - operator that converts single iterable argument to multible arguments
 - is used in method call
-- is opposite to *rest parameter*
+- is opposite to _rest parameter_
 
 ```javascript
 function spread(a, b) {
@@ -98,14 +98,22 @@ spread(..."ab");
 Is better to evaluate code in global context
 
 ```javascript
-eval.call(undefined, 'code')
+eval.call(undefined, "code");
 ```
 
 **Note:** `Function` creates function in non-strict mode.
 
 ```javascript
-(new Function('a', 'b', 'return a + b'))(1, 2);
+new Function("a", "b", "return a + b")(1, 2);
 ```
+
+**What is carrying?**
+
+- converting function with two parameters into two nested functions with one parameter each.
+
+  ```javascript
+  x => y => x + y;
+  ```
 
 ## Context
 
@@ -120,6 +128,16 @@ eval.call(undefined, 'code')
 - `func.call(obj, ...[arg1, arg2])`
 - `const bound = func.bind(obj, arg1, arg2)`
 
+**How can you implement `bind()` function?**
+
+```javascript
+function bind(func, context, ...boundArgs) {
+  return function(...args) {
+    func.call(context, ...boundArgs, ...args);
+  };
+}
+```
+
 **How does context work in different function types?**
 
 |                                             | Real function                                                 | Method                   | Constructor    |
@@ -131,5 +149,5 @@ eval.call(undefined, 'code')
 
 **How does context work in arrow function?**
 
-- arrow functions get context from outer scope with closure (the logic is the same as for variables)
+- arrow functions get context (`this`) from outer scope with closure (the logic is the same as for variables)
 - `arguments` is absent in arrow function

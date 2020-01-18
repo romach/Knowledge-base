@@ -36,3 +36,8 @@ You can use _array literal_: `let arr = [1, 2]`
 let clone = arr1.concat();
 ```
 
+**How to find index of element in array?**
+
+```javascript
+array.indexOf("element");
+```
