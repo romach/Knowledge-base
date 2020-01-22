@@ -23,6 +23,21 @@ sidebar_label: Objects
 
 * `Object.create(prototype)`
 
+* assemble from entries
+
+  ```javascript
+  Object.fromEntries([
+    ["one", 1],
+    ["two", 2]
+  ]);
+  ```
+
+**How to create object without prototype?**
+
+```javascript
+Object.create(null);
+```
+
 **How to delete property from object?**
 
 Use [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) operator: `delete obj.prop;`
@@ -42,13 +57,19 @@ Object.getOwnPropertySymbols(obj); //only symbols
 Reflect.ownKeys(obj); //all keys
 ```
 
-**How to get object keys-value pairs?**
+**How to get object values (enumerable)?**
+
+```javascript
+Object.values(o);
+```
+
+**How to get object keys-value pairs (enumerable)?**
 
 ```javascript
 Object.entries(obj); //=> [['key1', 'value1'], ['key2', 'value2']]
 ```
 
-**How to check if object has not inherited property?**
+**How to check if object has not-inherited property?**
 
 Use [`hasOwnProperty()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) method: `obj.hasOwnProperty('prop')`
 
@@ -97,18 +118,6 @@ Use [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 - wrapper classes provide properties for primitive types;
 - wrapper classes are namespaces for utility functions;
 - to create objects from primitive values;
-
-**How to get object keys?**
-
-```javascript
-Object.keys(obj);
-```
-
-**How to get object keys-value pairs?**
-
-```javascript
-Object.entries(obj); //=> [['key1', 'value1'], ['key2', 'value2']]
-```
 
 **How to create getter?**
 
@@ -172,3 +181,41 @@ const o = {
 o.key; // => "value"
 o[keyName]; // => "value"
 ```
+
+**What does `Object.assign()` function do?**
+
+It assigns properties from `source` objects to `target` object and returns `target` object
+
+```javascript
+const target = { first: 1 };
+Object.assign(target, { first: 2, second: 2 }, { first: 3, third: 3 });
+//=> {first:3, second:2, third:3}
+```
+
+**How to freeze object?**
+
+Use `Object.freeze(obj)` - can't change prototype and shallow properties.
+
+```javascript
+Object.freeze({ one: 1 });
+```
+
+**What is the attribute?**
+
+Ii is component (property) of the property.
+
+**What is property descriptor?**
+
+It is the object where each field is attribute.
+
+```javascript
+const o = { one: 1 };
+Object.getOwnPropertyDescriptor(o, "one");
+```
+
+**What property attributes do you know?**
+
+- **_value_** - property value
+- **_writable_**
+- **_enumerable_** - ignored by `Object.keys()`
+- **_configurable_**

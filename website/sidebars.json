@@ -11,6 +11,8 @@
       "javascript/types-coercion",
       "javascript/objects",
       "javascript/scopes",
+      "javascript/prototypes",
+      "javascript/classes",
       "javascript/closures",
       "javascript/arrays",
       "javascript/functions",
