@@ -27,6 +27,7 @@ At this time there are pages:
   - [Modules](javascript/modules)
   - [Testing](javascript/testing)
   - [Exception handling](javascript/exception-handling)
+  - [DOM](javascript/dom)
 - **Ansible**
   - [Overview](ansible/overview.md)
   - [Installation](ansible/installation.md)

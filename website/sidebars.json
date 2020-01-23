@@ -18,7 +18,8 @@
       "javascript/functions",
       "javascript/modules",
       "javascript/testing",
-      "javascript/exception-handling"
+      "javascript/exception-handling",
+      "javascript/dom"
     ],
     "Ansible": [
       "ansible/overview",
