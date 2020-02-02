@@ -68,7 +68,8 @@ const symbol = Symbol("symbol");
 
 **What falsy values do you know?**
 
-- `null`, `undefined`
+- `null`
+- `undefined`
 - `0`, `NaN`
 - `false`
 - `''`

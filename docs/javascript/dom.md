@@ -7,55 +7,55 @@ sidebar_label: DOM
 **How to get element by id?**
 
 ```javascript
-document.getElementById('someId') // without #
+document.getElementById("someId"); // without #
 ```
 
 **How to get elements by tag name?**
 
 ```javascript
-document.getElementByTagName('span') // returns HTMLCollection
+document.getElementByTagName("span"); // returns HTMLCollection
 ```
 
 **How to get first element by query selector?**
 
 ```javascript
-document.querySelector('span')
+document.querySelector("span");
 ```
 
 **How to get all elements by query selector?**
 
 ```javascript
-document.querySelector('span') // returns NodeList
+document.querySelectorAll("span"); // returns NodeList
 ```
 
 **How to read node attribute?**
 
 ```javascript
-node.getAttribute('id')
+node.getAttribute("id");
 ```
 
 **How to set node attribute?**
 
 ```javascript
-node.setAttribute('id', 'some-id');
+node.setAttribute("id", "some-id");
 ```
 
 **How to get node type?**
 
 ```javascript
-node.nodeType
+node.nodeType;
 ```
 
 **How to get node name?**
 
 ```javascript
-node.nodeName
+node.nodeName;
 ```
 
 **How to get text inside `div` node?**
 
 ```javascript
-divNode.innerHTML
+divNode.innerHTML;
 ```
 
 **How to navigate through node tree?**
@@ -81,7 +81,6 @@ node.replaceChild(new, old);
 
 **How to add event listener to element?**
 
-```javascript                 
-node.addEventListener('click', handler)
+```javascript
+node.addEventListener("click", handler);
 ```
-

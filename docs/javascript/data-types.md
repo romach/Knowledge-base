@@ -14,7 +14,7 @@ sidebar_label: Data types
 
 **How many data types JavaScript has got?**
 
-- JavaScript has 7 types: 6 primitive and `object`
+- JavaScript has 8 types: 7 primitive and `object`
 
 **Why `typeof null` is `"object"`?**
 
