@@ -1,5 +1,4 @@
 ---
-id: overview
 title: Ansible overview
 sidebar_label: Overview
 ---

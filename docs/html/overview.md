@@ -1,5 +1,4 @@
 ---
-id: overview
 title: HTML Overview
 sidebar_label: Overview
 ---

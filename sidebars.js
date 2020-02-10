@@ -1,8 +1,14 @@
-{
-  "docs": {
-    "Main": ["index"],
-    "HTML": ["html/overview"],
-    "JavaScript": [
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+module.exports = {
+  someSidebar: {
+    HTML: ["html/overview"],
+    JavaScript: [
       "javascript/basics",
       "javascript/data-types",
       "javascript/variables",
@@ -21,11 +27,11 @@
       "javascript/exception-handling",
       "javascript/dom"
     ],
-    "Ansible": [
+    Ansible: [
       "ansible/overview",
       "ansible/installation",
       "ansible/run-commands"
     ],
-    "Vagrant": ["vagrant/overview", "vagrant/installation"]
+    Vagrant: ["vagrant/overview", "vagrant/installation"]
   }
-}
+};

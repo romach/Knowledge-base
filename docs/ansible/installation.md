@@ -1,5 +1,4 @@
 ---
-id: installation
 title: Ansible installation
 sidebar_label: Installation
 ---

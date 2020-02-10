@@ -84,3 +84,16 @@ node.replaceChild(new, old);
 ```javascript
 node.addEventListener("click", handler);
 ```
+
+**How to change browser reaction on event?**
+
+```javascript
+event.preventDefault(); // stops default browser reaction on event
+```
+
+**How to stop event bubbling?**
+
+```
+event.stopPropagation();
+```
+

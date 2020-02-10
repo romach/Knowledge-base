@@ -12,7 +12,7 @@ sidebar_label: Prototypes
 
 **How can you access prototype?**
 
-- `o.getPrototypeOf(obj)` - **recommended**
+- `Object.getPrototypeOf(obj)` - **recommended**
 - via `__proto__` property
 
 **How can you create object with specified prototype?**

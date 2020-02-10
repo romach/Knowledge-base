@@ -7,7 +7,8 @@ sidebar_label: Arrays
 **How to merge two arrays?**
 
 ```javascript
-Array.prototype.push.apply(array1, array2);
+array1.push(...array2); // alter array1
+array1.concat(array2); // merges array1 and array2 creating shallow copy
 ```
 
 **How to shuffle array?**
