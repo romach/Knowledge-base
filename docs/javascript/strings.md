@@ -10,6 +10,11 @@ sidebar_label: Strings
 - `'' + value`
 - `x.toString()` - not applicable for `null` and `undefined`
 
+**How string is converted with arithmetic operands?**
+
+- when `+` is used, other operand is converted to string;
+- when `-`, `/`, `*` are used, string is converted to number;
+
 **How to strignify values?**
 
 - use `toString()` method

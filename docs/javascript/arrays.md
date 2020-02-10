@@ -4,6 +4,12 @@ title: Arrays
 sidebar_label: Arrays
 ---
 
+**How does operators work with arrays?**
+
+```javascript
+[1,2,3] + [4,5,6]; //'1,2,34,5,6'
+```
+
 **How to merge two arrays?**
 
 ```javascript

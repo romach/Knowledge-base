@@ -4,6 +4,11 @@ title: Functions
 sidebar_label: Functions
 ---
 
+**What scope does function declaration have?**
+
+- function-scoped in sloppy mode;
+- block-scoped in strict mode;
+
 **What types of functions do you know?**
 
 - ordinary function;

@@ -4,6 +4,19 @@ title: Objects
 sidebar_label: Objects
 ---
 
+**How objects work with arithmetic operators?**
+
+- first of all object is converted to primitive value using `valueOf()` method;
+- if `valueOf()` returns object, then it is ignored and `toString()` method is used;
+
+**How objects work with template literals?**
+
+- `toString()` is used;
+
+**How object is compared with primitive?**
+
+- `valueOf()` is used. If non primitive is returned, `toString()` is used;
+
 **How can you create objects?**
 
 - with _object literal_:
