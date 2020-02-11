@@ -70,13 +70,13 @@ Object.getOwnPropertySymbols(obj); //only symbols
 Reflect.ownKeys(obj); //all keys
 ```
 
-**How to get object values (enumerable)?**
+**How to get object values (_enumerable_)?**
 
 ```javascript
 Object.values(o);
 ```
 
-**How to get object keys-value pairs (enumerable)?**
+**How to get object keys-value pairs (_enumerable_)?**
 
 ```javascript
 Object.entries(obj); //=> [['key1', 'value1'], ['key2', 'value2']]
@@ -232,3 +232,22 @@ Object.getOwnPropertyDescriptor(o, "one");
 - **_writable_**
 - **_enumerable_** - ignored by `Object.keys()`
 - **_configurable_**
+
+**How to create non-enumerable properties?**
+
+```javascript
+Object.defineProperties(obj, {
+  prop: {
+    value: 3,
+    enumerable: false
+  }
+});
+```
+
+**How to change property's attribute?**
+
+```javascript
+Object.defineProperty(o, "prop", {
+  enumerable: false
+});
+```

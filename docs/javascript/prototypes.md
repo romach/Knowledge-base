@@ -15,6 +15,12 @@ sidebar_label: Prototypes
 - `Object.getPrototypeOf(obj)` - **recommended**
 - via `__proto__` property
 
+**How to create object without prototype?**
+
+```javascript
+Object.create(null);
+```
+
 **How can you create object with specified prototype?**
 
 - with `__proto__` property:
