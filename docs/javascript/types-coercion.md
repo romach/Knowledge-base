@@ -37,3 +37,29 @@ See [table](https://dorey.github.io/JavaScript-Equality-Table/) for reference
 
 - see [table](https://getify.github.io/coercions-grid/)
 - read [article](https://davidwalsh.name/fixing-coercion)
+
+**How are types converted to boolean?**
+
+| Initial value                   | Boolean    |
+| ------------------------------- | ---------- |
+| `undefined`                     | `false`    |
+| `null`                          | `false`    |
+| `0`                             | `false`    |
+| `NaN`                           | `false`    |
+| numbers (besides `0` and `NaN`) | **`true`** |
+| `''`                            | `false`    |
+| strings (besides `''`)          | **`true`** |
+| objects                         | **`true`** |
+
+**How are types converted to numbers with `Number()`?**
+
+| Initial               | Result of `Number()`          |
+| --------------------- | ----------------------------- |
+| `undefined`           | **`NaN`**                     |
+| `null`                | `0`                           |
+| `false`               | `0`                           |
+| `true`                | `1`                           |
+| `''`                  | `0`                           |
+| string (besides `''`) | parsed to number or **`NaN`** |
+| object                | use `valueOf()`               |
+

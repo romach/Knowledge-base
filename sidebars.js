@@ -7,7 +7,8 @@
 
 module.exports = {
   someSidebar: {
-    HTML: ["html/overview"],
+    HTML: ["html/overview", "html/images"],
+    CSS: ["css/overview"],
     JavaScript: [
       "javascript/basics",
       "javascript/data-types",

@@ -66,10 +66,8 @@ const symbol = Symbol("symbol");
 - `Symbol.toStringTag`: key for method that ca be used instead of `toString()`
 - `Symbol.toPrimitive(hint)`: to convert object to primitive value;
 
-**What falsy values do you know?**
+**How logical `OR` and `AND` work?** 
 
-- `null`
-- `undefined`
-- `0`, `NaN`
-- `false`
-- `''`
+- they return one of the operands, **NOT** boolean
+- `a && b : a == false ? a : b`
+- `a || b : a == true ? a : b` 

@@ -15,3 +15,16 @@ sidebar_label: Numbers
   - note, that rounding isn't always valid due to floating point numbers cannot represent all decimals precisely
 - `Math.floor(2.45)` - round down
 - `Math.ceil(2.45)` - round up
+
+**How to check value for `NaN`?**
+
+```javascript
+Number.isNaN(a);
+```
+
+**How to check if number is integer?**
+
+```javascript
+Number.isInteger(1);
+```
+
