@@ -171,9 +171,23 @@ const o = {
 
 **How can you make shallow copy of the object?**
 
+**Notes:**
+
+- prototype isn't copied
+- non-enumerable properties aren't copied
+- property attributes are not copied properly
+- getters and setters are not copied properly
+
 ```javascript
 const o = { prop: 1 };
 const copy = { ...o };
+```
+
+**Copy with prototype**
+
+```javascript
+const o = { prop: 1 };
+const copy = { __proto__: Object.getPrototypeOf(o), ...o }
 ```
 
 **How can you create object with default properties?**
@@ -203,6 +217,16 @@ It assigns properties from `source` objects to `target` object and returns `targ
 const target = { first: 1 };
 Object.assign(target, { first: 2, second: 2 }, { first: 3, third: 3 });
 //=> {first:3, second:2, third:3}
+```
+
+**How to create proper shallow copy?**
+
+```javascript
+function copyAllOwnProperties(original) {
+	return Object.defineProperties(
+		{}, Object.getOwnPropertyDescriptors(original)
+    );
+}
 ```
 
 **How to freeze object?**

@@ -62,3 +62,15 @@ o.isPrototypeOf(b); //`o` is in prototype chain of `b`
 
 - only own property is changed (or is created when not found)
 - property from prototype stays intact
+
+**How to create static method?**
+
+```javascript
+class Person {
+	static staticMethod(){
+		return 'static method';
+	}
+}
+// Person.staticMethod();
+```
+
