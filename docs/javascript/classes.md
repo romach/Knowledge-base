@@ -47,3 +47,17 @@ const balance = new Balance(10);
 - to return values from descendant's `constructor()`
 - to access this in descendant's `constructor()`
 
+**What is default constructor of the base class?**
+
+```javascript
+constructor(){}
+```
+
+**What is default constructor of derived class?**
+
+```javascript
+constructor(...params){
+  super(...params)
+}
+```
+
