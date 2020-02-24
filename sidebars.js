@@ -7,8 +7,17 @@
 
 module.exports = {
   someSidebar: {
-    HTML: ["html/overview", "html/images"],
-    CSS: ["css/overview"],
+    HTML: [
+      "html/overview",
+      "html/images",
+      "html/optimization"
+    ],
+    CSS: [
+      "css/overview",
+      "css/bootstrap",
+      "css/less",
+      "css/bem"
+    ],
     JavaScript: [
       "javascript/basics",
       "javascript/data-types",
@@ -17,6 +26,7 @@ module.exports = {
       "javascript/strings",
       "javascript/types-coercion",
       "javascript/objects",
+      "javascript/context",
       "javascript/scopes",
       "javascript/prototypes",
       "javascript/classes",
@@ -26,7 +36,8 @@ module.exports = {
       "javascript/modules",
       "javascript/testing",
       "javascript/exception-handling",
-      "javascript/dom"
+      "javascript/dom",
+      "javascript/bom"
     ],
     Ansible: [
       "ansible/overview",
