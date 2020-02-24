@@ -36,6 +36,34 @@ sidebar_label: Objects
 
 * `Object.create(prototype)`
 
+* with `new` keyword (not recommended)
+
+  ```javascript
+  const o = new Object();
+  ```
+  
+* with constructor function
+
+  ```javascript
+  function Person(firstName, secondName) {
+    this.firstName = firstName;
+    this.secondName = secondName;
+  }
+  const p = new Person("First", "Second");
+  ```
+
+* with classes
+
+  ```javascript
+  class Person {
+    constructor(firstName, secondName) {
+      this.firstName = firstName;
+      this.secondName = secondName;
+    }
+  }
+  const p = new Person("First", "Second");
+  ```
+
 * assemble from entries
 
   ```javascript

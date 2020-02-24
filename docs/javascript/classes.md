@@ -41,3 +41,9 @@ class Balance {
 const balance = new Balance(10);
 // Object{amount:field} => Object{constructor:func, increment:func} => Object{system methods}
 ```
+
+**When do you need to use `super()`?**
+
+- to return values from descendant's `constructor()`
+- to access this in descendant's `constructor()`
+
