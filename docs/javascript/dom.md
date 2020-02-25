@@ -4,6 +4,16 @@ title: DOM
 sidebar_label: DOM
 ---
 
+**What object should we use to manipulate with DOM?**
+
+- `document`
+
+**How to remove node?**
+
+```javascript
+node.remove()
+```
+
 **How to get element by id?**
 
 ```javascript
@@ -13,7 +23,7 @@ document.getElementById("someId"); // without #
 **How to get elements by tag name?**
 
 ```javascript
-document.getElementByTagName("span"); // returns HTMLCollection
+document.getElementsByTagName("span"); // returns HTMLCollection
 ```
 
 **How to get first element by query selector?**
@@ -52,10 +62,10 @@ node.nodeType;
 node.nodeName;
 ```
 
-**How to get text inside `div` node?**
+**How to get access to the text inside node?**
 
 ```javascript
-divNode.innerHTML;
+node.textContent;
 ```
 
 **How to navigate through node tree?**

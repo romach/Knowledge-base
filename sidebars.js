@@ -32,6 +32,7 @@ module.exports = {
       "javascript/classes",
       "javascript/closures",
       "javascript/arrays",
+      "javascript/iterable",
       "javascript/functions",
       "javascript/modules",
       "javascript/testing",
