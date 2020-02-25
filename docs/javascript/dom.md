@@ -80,7 +80,7 @@ node.parentNode;
 **How to modify node tree?**
 
 ```javascript
-document.createElement("My element");
+document.createElement("p");
 document.createTextNode("Text");
 newNode = node.cloneNode(deepClone:Boolean);
 node.appendChild(rightLeafNode);
