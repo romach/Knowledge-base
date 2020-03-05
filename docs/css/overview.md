@@ -19,6 +19,12 @@ visibility: hidden;
 display: none;
 ```
 
+**How to forbid to select text?**
+
+```css
+user-select: none;
+```
+
 ## Typography
 
 **How to make bold text?**

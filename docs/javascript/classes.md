@@ -45,7 +45,7 @@ const balance = new Balance(10);
 **When do you need to use `super()`?**
 
 - to return values from descendant's `constructor()`
-- to access this in descendant's `constructor()`
+- to access `this` in descendant's `constructor()`
 
 **What is default constructor of the base class?**
 
