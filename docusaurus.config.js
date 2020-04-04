@@ -8,7 +8,11 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'romach', // Usually your GitHub org/user name.
   projectName: 'Knowledge-base', // Usually your repo name.
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-162800907-1'
+    },
     navbar: {
       title: 'Knowledge base',
       logo: {
