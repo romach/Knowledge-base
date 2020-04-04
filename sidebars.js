@@ -40,6 +40,23 @@ module.exports = {
       "javascript/dom",
       "javascript/bom"
     ],
+    JQuery: [
+      "jquery/basics"
+    ],
+    React: [
+      "react/basics",
+      "react/redux"
+    ],
+    Angular: [
+      "angular/basics",
+      "angular/reactive-forms"
+    ],
+    Webpack: [
+      "webpack/configuration"
+    ],
+    NPM: [
+      "npm/basics"
+    ],
     Ansible: [
       "ansible/overview",
       "ansible/installation",

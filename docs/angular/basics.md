@@ -1,4 +1,7 @@
-## Notes
+---
+title: Angular Basics
+sidebar_label: Basics
+---
 
 ## TypeScript
 

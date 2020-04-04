@@ -1,4 +1,7 @@
-# Reactive forms
+---
+title: Reactive Forms
+sidebar_label: Reactive Forms
+---
 
 ## Notes
 

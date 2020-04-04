@@ -1,3 +1,8 @@
+---
+title: NPM basics
+sidebar_label: Basics
+---
+
 **Why do we need lock file?**
 
 **What is the flat dependency?**

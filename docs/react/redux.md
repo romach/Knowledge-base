@@ -1,3 +1,8 @@
+---
+title: Redux
+sidebar_label: Redux
+---
+
 **What is Redux?**
 
 - state management tool
@@ -50,7 +55,9 @@
 
 - create reducer
   - function, that receives state and action and returns new state
-
+- create `rootReducer`
+  - use `combineReducers({alias: reducer, ...})` from `redux` to combine several reducers
+  - in `mapStateToProps` use `state.alias.property` to get property
 - use `createStore()` form `redux`
   - pass reducer to `createStore()`
 
@@ -83,3 +90,32 @@
   - has action creators as values
 - use `mapDispatchToProps` as second parameter in `connect()`
 - get dispatch function from `props` inside `rnder()` method
+
+### Install redux-devtools-extension
+
+- install Chrome [extension](https://github.com/zalmoxisus/redux-devtools-extension)
+- install package `npm i -D redux-devtools-extension`
+- pass `devToolsEnhancer()` from `redux-devtools-extension` as a second parameter to `createStore(...)`
+
+## Redux forms
+
+- package: `redux-form`
+
+- add `reducer` from `redux-form` to `rootReducer`
+
+- wrap `EntityForm` with `reduxForm` HOC
+
+  ```react
+  export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(reduxForm({ form: "entityForm" })(EntityForm));
+  ```
+
+- use `<Field>` component to create inputs
+
+  ```jsx
+  <Field name="title" component="input" placeholder="Title"/>
+  ```
+
+  

@@ -1,3 +1,8 @@
+---
+title: JQuery basics
+sidebar_label: Basics
+---
+
 **What main jQuery tasks do  you know?**
 
 - Selectors

@@ -1,4 +1,7 @@
-# Configure Webpack
+---
+title: Webpack configuration
+sidebar_label: Configuration
+---
 
 ## Add Webpack to project
 

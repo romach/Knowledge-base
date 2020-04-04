@@ -1,3 +1,8 @@
+---
+title: React basics
+sidebar_label: Basics
+---
+
 **What is reconciliation?**
 
 **Can you mutate `props`?**
@@ -103,7 +108,7 @@ render();
 
   - `<Component/>` -> `<Route path="/path" component={Component}/>`
 
-    - component passed by `component` has access to `history` via `props.history`
+    - component passed by `component` has access to `history`, `location` and `match` via `props`
 
     - add attribute `exact` to `Route` with `path="/"`
 
@@ -133,8 +138,15 @@ render();
     - add `exact` attribute to `Link` with `to="/"`
 
 - programmatically go by route
+  
   - `<button onClick={() => this.props.history.push("/page")}></button>`
+  
 - inject `Router` props to component
+  
   - `export withRouter(MyComponent)`
-- wrap routes with `<Switch>` to omit loops while routing
+  
+- wrap routes with `<Switch>` to omit loops while routing (similar to `exact`)
+
+  - use `<Switch>` with `key` attribute to update same component with different routes
+
 - use `<Redirect exact from="/user" to "/user/home"/>` to redirect to another route
